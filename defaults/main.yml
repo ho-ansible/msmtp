@@ -2,3 +2,4 @@
 msmtp_host: smtp.gmail.com
 msmtp_login: ''
 msmtp_pw: ''
+msmtp_recipient: "{{ msmtp_login }}"
