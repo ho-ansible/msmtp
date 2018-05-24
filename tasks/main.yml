@@ -28,6 +28,6 @@
     dest: "/etc/{{ item }}"
     group: www-data
     mode: 0640
-  with_items:
+  loop:
     - msmtprc
     - aliases
