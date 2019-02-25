@@ -26,7 +26,7 @@
   template:
     src: "{{ item }}.j2"
     dest: "/etc/{{ item }}"
-    group: www-data
+    group: msmtp
     mode: 0640
   loop:
     - msmtprc
