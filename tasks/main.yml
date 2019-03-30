@@ -19,6 +19,12 @@
       - exim4-base
       - exim4-config
 
+- name: msmtp | group
+  tags:
+    - group
+  group:
+    name: msmtp
+
 - name: msmtp | config
   tags:
     - mail
