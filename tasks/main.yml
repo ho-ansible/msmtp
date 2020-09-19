@@ -2,38 +2,38 @@
 
 - name: msmtp | package
   tags:
-    - package
+  - package
   package:
     name: msmtp-mta
 
 - name: msmtp | remove other MTAs
   tags:
-    - package
+  - package
   package:
     state: absent
     purge: yes
     name: 
-      - sendmail-base
-      - sendmail-cf
-      - sendmail-doc
-      - exim4-base
-      - exim4-config
+    - sendmail-base
+    - sendmail-cf
+    - sendmail-doc
+    - exim4-base
+    - exim4-config
 
 - name: msmtp | group
   tags:
-    - group
+  - group
   group:
     name: msmtp
 
 - name: msmtp | config
   tags:
-    - mail
-    - config
+  - mail
+  - config
   template:
     src: "{{ item }}.j2"
     dest: "/etc/{{ item }}"
     group: msmtp
     mode: 0640
   loop:
-    - msmtprc
-    - aliases
+  - msmtprc
+  - aliases
