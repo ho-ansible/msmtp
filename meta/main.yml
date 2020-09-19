@@ -1,6 +1,6 @@
 galaxy_info:
   author: Sean Ho
-  description: Template ansible role
+  description: Forwarding local MTA
   company: Anchorlytics Consulting
   license: MIT
 
@@ -13,6 +13,8 @@ galaxy_info:
     - 10
 
   galaxy_tags:
-  - template
+  - smtp
+  - mail
+  - mta
 
 dependencies: []
