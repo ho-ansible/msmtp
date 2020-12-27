@@ -2,9 +2,10 @@
 # Configure template role
 # Replace 'all' with your own inventory group
 ---
-- name: template | template role
+- name: msmtp | forwarding mailer
   hosts: all
   roles:
-  - role: template
+  - role: msmtp
     tags:
-    - template
+    - msmtp
+    - mail

@@ -8,7 +8,7 @@ tls_trust_file /etc/ssl/certs/ca-certificates.crt
 
 account {{ msmtp_host }}
 host {{ msmtp_host }}
-from {{ msmtp_login }}
+from {{ msmtp_recipient }}
 user {{ msmtp_login }}
 password {{ msmtp_pw }}
 
